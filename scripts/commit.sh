@@ -1,1 +1,1 @@
-git commit -m working
+git commit -am working
