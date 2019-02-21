@@ -6,6 +6,6 @@ public class CustomerAPITests {
 
     @Test(expected = IllegalArgumentException.class)
     public void creatingCustomerWithNull_Throws() {
-        new CustomerApi().create(null);
-    } 
+        new CustomerAPI().create(null);
+    }
 }
