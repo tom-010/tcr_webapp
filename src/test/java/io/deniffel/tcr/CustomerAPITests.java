@@ -12,6 +12,8 @@ public class CustomerAPITests {
         new CustomerAPI().create(null);
     }
 
+    
+
     @Test
     public void allCustomers_initialNoElements() {
         assertEquals(0, new CustomerAPI().all().size());
@@ -31,4 +33,3 @@ public class CustomerAPITests {
         return new Customer();
     }
 }
- 
