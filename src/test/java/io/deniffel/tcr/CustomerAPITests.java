@@ -17,4 +17,3 @@ public class CustomerAPITests {
         assertEquals(0, new CustomerAPI().all().size());
     }
 }
- 
