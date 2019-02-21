@@ -5,7 +5,7 @@ public class Customer {
     private String name;
 
     public boolean isValid() {
-        return false;
+        return name != null;
     }
 
     public String getName() {

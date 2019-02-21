@@ -11,4 +11,11 @@ public class CustomerValidationTest {
     public void emptyCustomer_notValid() {
         assertFalse(new Customer().isValid());
     }
+
+    @Test
+    public void customerWithName_valid() {
+        Customer c = new Customer();
+        c.setName("name");
+        assertTrue(c.isValid());
+    }
 }
