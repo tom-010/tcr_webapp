@@ -16,4 +16,14 @@ public class CustomerAPITests {
     public void allCustomers_initialNoElements() {
         assertEquals(0, new CustomerAPI().all().size());
     }
+
+    @Test
+    public void allCustomers_correctListSize() {
+        CustomerAPI api = new CustomerAPI();
+        api.customers.add(new Object());
+        api.customers.add(new Object());
+        api.customers.add(new Object());
+
+        assertEquals(3, api.all().size());
+    }
 }
