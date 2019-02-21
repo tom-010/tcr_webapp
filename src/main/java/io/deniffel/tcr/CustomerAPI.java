@@ -6,13 +6,13 @@ import java.util.List;
 
 public class CustomerAPI {
 
-    List<Object> customers = new LinkedList<>();
+    List<Customer> customers = new LinkedList<>();
 
-    public void create(Object o) {
+    public void create(Customer o) {
         throw new IllegalArgumentException();
     }
 
-    public List<Object> all() {
+    public List<Customer> all() {
         return customers;
     }
 }

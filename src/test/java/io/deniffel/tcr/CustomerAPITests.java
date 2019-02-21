@@ -20,9 +20,9 @@ public class CustomerAPITests {
     @Test
     public void allCustomers_correctListSize() {
         CustomerAPI api = new CustomerAPI();
-        api.customers.add(new Object());
-        api.customers.add(new Object());
-        api.customers.add(new Object());
+        api.customers.add(new Customer());
+        api.customers.add(new Customer());
+        api.customers.add(new Customer());
 
         assertEquals(3, api.all().size());
     }
