@@ -18,4 +18,11 @@ public class CustomerValidationTest {
         c.setName("name");
         assertTrue(c.isValid());
     }
+
+    @Test
+    public void customerWithoutName_notValid() {
+        Customer c = new Customer();
+        c.setName(null);
+        assertFalse(c.isValid());
+    }
 }
