@@ -12,7 +12,13 @@ public class CustomerAPITests {
         new CustomerAPI().create(null);
     }
 
-    
+    @Test
+    public void createValidCustomer_itIsListed() {
+        CustomerAPI api = new CustomerAPI();
+        int sizeBefore =  api.all().size();
+        api.create(createValidCustomer());
+        assertEquals(sizeBefore + 1, api.all().size());
+    }
 
     @Test
     public void allCustomers_initialNoElements() {
